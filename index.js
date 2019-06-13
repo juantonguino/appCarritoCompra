@@ -2,7 +2,7 @@ var express= require('express')
 var bodyParser= require('body-parser')
 var http= require('http')
 
-var port = 3000
+var port = process.env.PORT ||3000
 
 app=express()
 app.use(bodyParser.urlencoded({extended:false}))
